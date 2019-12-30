@@ -14,8 +14,8 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav style="width: 12vw;">
     <mat-nav-list>
-      <a style="font-size: 20px;" mat-list-item [routerLink]="'/OverView'"> 所有國家貨幣 </a>
-      <a style="font-size: 20px;" mat-list-item [routerLink]="'/PumpLineChart'"> 匯率變化 </a>
+      <a style="font-size: 20px;" mat-list-item href="" > {{'Home.allcountries'|translate }} </a>
+      <a style="font-size: 20px;" mat-list-item [routerLink]="'/MoneyDeatil'"> {{'Home.exchange-rate-chart'|translate }}  </a>
       <a style="font-size: 20px;" mat-list-item (click)="sidenav.toggle()" href="" mat-list-item> </a>
     </mat-nav-list>
   </mat-sidenav>

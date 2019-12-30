@@ -9,14 +9,4 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-/* 載入 Material 的SCSS */
-@import "~@angular/material/theming";
-@include mat-core();
 
-// 定義Material主題顏色
-$dark-primary: mat-palette($mat-teal);
-$dark-accent: mat-palette($mat-cyan, A200, A100, A400);
-$dark-warn: mat-palette($mat-deep-orange);
-$dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn); // 這裡如果用mat-light-theme會變成淺色主題
-
-@include angular-material-theme($dark-theme);

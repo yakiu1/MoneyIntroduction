@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MoneyIntroduction';
+
+  constructor(private translate: TranslateService) {
+
+    // 設定預設語系
+    translate.setDefaultLang('zh-tw');
+  }
 }
